@@ -1,21 +1,21 @@
-# Type-1:
-def func1():
-    print("*"*50)
-    print("result")
-    print("*"*50)
-func1()
+# # Type-1:
+# def func1():
+#     print("*"*50)
+#     print("result")
+#     print("*"*50)
+# func1()
 
-#Type-2:
+# #Type-2:
 
-def pretty(func):
-    print("*"*50)
-    func()
-    print("*"*50)
+# def pretty(func):
+#     print("*"*50)
+#     func()
+#     print("*"*50)
 
-def fnc():
-    print("Hello")
+# def fnc():
+#     print("Hello")
 
-pretty(fnc)
+# pretty(fnc)
 
 # Type-3 Higher Order Functions:
 
@@ -26,8 +26,8 @@ def pretty(f):
         print("*"*50)
     return inner
 
-new_func1=pretty(fnc)
-new_func1()
+# new_func1=pretty(fnc)
+# new_func1()
 
 @pretty
 def fnc():
