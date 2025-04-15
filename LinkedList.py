@@ -46,6 +46,17 @@ class LinkedList:
                     break
                 prev=i
                 i=i.next
+    def insert(self,position,data):
+        new_node=Node(data)
+        if position == 0:
+            new_node.next = self.head
+            self.head = new_node
+            return
+        i=self.head
+        for j in range(position-2):
+            i=i.next
+        new_node.next = i.next
+        i.next = new_node
 
   
 l = LinkedList()
@@ -54,7 +65,10 @@ l.append(2)
 l.append(3)
 l.append(4)
 l.display()
+print("#######################################")
 l.remove(3)
 l.display()
-
+print("#######################################")
+l.insert(2,5)
+l.display()
 
